@@ -28,8 +28,8 @@
 
 **Remark**
 
-CSS formatting rules are followed in the design of this webpage project.
+All CSS formatting rules are followed in the design of this project.
 
 **Attributions**
 
-The copyrights of all photos/images appearing in this website, including the logo and Favicon are reserved to Mariusz Matysek.
+The copyrights of all the photos/images appearing in this website, including the Logo and Favicon are reserved to Mariusz Matysek.
