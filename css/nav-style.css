@@ -32,6 +32,7 @@ img {
     max-width: 100%;
 }
 
+
 main,
 form,
 footer {
@@ -49,8 +50,9 @@ footer {
     overflow: hidden;
     background-color: #333;
     padding: .5rem;
-    color: white;
+    color:#1cead2;
     font-size: 1.5rem;
+    
 }
 
 a.skip:active,
@@ -63,19 +65,20 @@ a.skip:hover {
     overflow: visible;
 }
 
-/*   mobile-first header with hamburger*/
+
 .logo-container {
     display: flex;
 }
 
 .page-title {
-    color: white;
+    color:#1cead2;
     font-size: 1.5rem;
 }
 
 .navbar {
     background-color: #333;
     padding-bottom: 1rem;
+    
 }
 
 .main-nav {
@@ -86,7 +89,7 @@ a.skip:hover {
 .nav-links,
 .logo {
     text-decoration: none;
-    color: white;
+    color:#1cead2;
 }
 
 .main-nav li {
@@ -106,7 +109,7 @@ a.skip:hover {
     top: 10px;
     right: 20px;
     cursor: pointer;
-    color: white;
+    color:#1cead2 ;
     font-size: 1.5rem;
 }
 
@@ -152,7 +155,7 @@ a.skip:hover {
 
     .logo:hover,
     .nav-links:hover {
-        color: white;
+        color:#1cead2;
     }
 }
 

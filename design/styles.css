@@ -1,0 +1,290 @@
+body {
+    font-family: 'Playfair Display', serif;
+    font-weight: 400;
+    margin: 0;
+}
+
+.hero {
+    align-self: center;
+    justify-self: center;
+}
+
+.my-picture {
+    filter: contrast(100%);
+}
+
+.about-me {
+    text-align: center;
+    align-self: center;
+    justify-self: center;
+}
+
+.iama {
+    align-self: center;
+    justify-self: center;
+    text-decoration: underline overline #1cead2 ;
+    text-decoration-style: solid;
+    
+}
+
+.demo-class {
+    font-size: 2rem;
+    align-self: center;
+    justify-self: center;
+}
+
+.my-info {
+    font-family: 'Playfair Disply',serif;
+    font-style: oblique;
+}
+
+.pic:hover {
+    transition-duration: 4s;
+    transform: scale(1.1) translate(0%, -50%);
+    margin-left: 2rem;
+}
+
+article h1,
+.story-body,
+.article-body {
+    align-self: center;
+    justify-self: center;
+}
+
+.firstcharacter {
+    color: #903;
+    float: left;
+    font-family: 'Playfair Display',serif;
+    font-size: 75px;
+    line-height: 60px;
+    padding-top: 4px;
+    padding-right: 8px;
+    padding-left: 3px;
+}
+
+form {
+    font-family: 'Playfair Display', serif;
+    font-weight: 200;
+    font-style: italic;
+    position: relative;
+    margin: 0;
+}
+
+input {
+    height: 2.5em;
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+input:focus,
+textarea:focus {
+    background-color:whitesmoke;
+    border-radius: 5px;
+    outline: none;
+}
+
+legend {
+    max-width: 100%;
+    max-height: 100%;
+    overflow: hidden;
+}
+
+textarea {
+    height: 5em;
+    min-width: 100%;
+    vertical-align: top;
+    max-width: 100%;
+    display: block;
+    resize: none;
+    overflow: auto;
+}
+
+button:hover {
+    transition-duration: 4s;
+    background: #1cead2;
+    border-width: 10px;
+}
+
+button:active {
+    background: #a8ff11;
+    transform: scale(4) translate(50%, 0%);
+    transition-duration: 150ms;
+}
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 2/3;
+    align-self: center;
+    justify-self: center;
+}
+
+.github {
+    object-position: left;
+    height: 3em;
+    width: 4em;
+}
+
+/*  grids */
+
+main {
+    display: grid;
+}
+
+/* hero content */
+
+.content {
+    display: grid;
+    align-self: center;
+    justify-self: center;
+}
+
+
+/*  gallery */
+
+.gallery {
+    display: grid;
+}
+
+figure {
+    display: grid;
+}
+
+
+/*  article */
+
+article {
+    display: grid;
+}
+
+/* formcontainer */
+
+
+/* footer */
+
+footer {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column: 2/3;
+    align-self: center;
+    justify-self: center;
+}
+
+/*  layout */
+
+/*   mobile is the default layout*/
+
+/* tablet layout >=48rem (768px) */
+
+@media screen and (min-width: 48rem) {
+
+    /*  hero content & about-content*/
+
+    content {
+        grid-template-columns: 1fr 8fr 1fr;
+    }
+
+    .content picture,
+    .content p {
+        grid-column: 2/3;
+        text-align: left;
+    }
+
+    .mobile-first {
+        display: none;
+    }
+
+    /*	gallery */
+
+    .gallery {
+        grid-template-columns: 1fr 20fr 1fr;
+    }
+
+    .gallery h3,
+    .gallery figure {
+        grid-column: 2/3;
+        align-self: center;
+        justify-self: center;
+    }
+
+    figure {
+        grid-template-columns: 1fr 1fr;
+        align-items: center;
+        justify-items: center;
+    }
+
+
+    /*	article */
+
+    article {
+        grid-template-columns: 1fr 48ch 1fr;
+    }
+
+    article h1,
+    .story-body {
+        grid-column: 2/3;
+    }
+
+    article h1 {
+        align-self: center;
+        justify-self: center;
+    }
+
+    /*	form */
+
+    .form-container {
+        display: grid;
+        grid-template-columns: 1fr 48rem 1fr;
+    }
+
+    .form-container h1,
+    .form-container form {
+        grid-column: 2/3;
+    }
+
+
+    .form-container h1 {
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+/* wide screen layout >=64rem (1024px) */
+
+@media screen and (min-width: 64rem) {
+
+    /*  hero content */
+
+    /*	about content */
+
+    /*	gallery */
+    .gallery {
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-areas:
+            "gallery-title gallery-title gallery-title"
+            "pic1 pic2 pic3";
+    }
+
+    .gallery h3 {
+        grid-area: gallery-title;
+    }
+
+    section .pic1 {
+        grid-area: pic1;
+    }
+
+    section .pic2 {
+        grid-area: pic2;
+    }
+
+    section .pic3 {
+        grid-area: pic3;
+    }
+
+
+
+}
+
+/*	article */
+
+/*	form */
